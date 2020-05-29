@@ -3079,14 +3079,18 @@
                           d="M32 41a3 3 0 103 3 3 3 0 00-3-3zm0 4a1 1 0 111-1 1 1 0 01-1 1z"
                         />
                       </svg>
-                      <span class="shops__categories-checkbox-content-text shops__categories-checkbox-content-text--shops">
+                      <span
+                        class="shops__categories-checkbox-content-text shops__categories-checkbox-content-text--shops"
+                      >
                         Интернет-магазины
                       </span>
                     </span>
                   </span>
                 </label>
               </li>
-              <li class="shops__categories-list-item shops__categories-list-item--fullwidth">
+              <li
+                class="shops__categories-list-item shops__categories-list-item--fullwidth"
+              >
                 <a href="#" class="shops__categories-add-location">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
                     <path
@@ -3210,9 +3214,7 @@
             <div class="shops__results-row">
               <div class="shops__results-left-col">
                 <div class="shops__results-map-container">
-                    <div class="shops__results-map js-yandex-map">
-
-                    </div>
+                  <div class="shops__results-map js-yandex-map"></div>
                 </div>
               </div>
               <div class="shops__results-right-col">
@@ -3221,646 +3223,803 @@
                     Санкт-Петербург:
                   </span>
                   <span class="shops__results-count-number">
-                    354 <span class="shops__results-count-number-type">дистрибьютера</span>
+                    354
+                    <span class="shops__results-count-number-type"
+                      >дистрибьютера</span
+                    >
                   </span>
                 </div>
                 <div class="shops__results-width-wrapper">
-                <div class="shops__results-wrapper js-custom-scroll-container">
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="carville-logos/carville-card-logo.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Carvilleshop
+                  <div
+                    class="shops__results-wrapper js-custom-scroll-container"
+                  >
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="carville-logos/carville-card-logo.svg"
+                          alt=""
+                          class="shops__results-card-icon"
+                        />
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Carvilleshop
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span class="shops__results-card-number-of-shops">
-                        5
-                      </span>
-                      <div class="shops__results-card-address">
-                        Шушары, Московское ш. 177 к 2, лит. Ж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#shop-1" class="shops__results-card-title-more-link js-shop-details-open">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span class="shops__results-card-number-of-shops">
+                          5
+                        </span>
+                        <div class="shops__results-card-address">
+                          Шушары, Московское ш. 177 к 2, лит. Ж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#shop-1"
+                            class="shops__results-card-additional-info js-shop-details-open"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="brands/avtozapchasti_dvizhcom.svg"
+                          alt=""
+                          class="shops__results-card-icon"
                         />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="brands/avtozapchasti_dvizhcom.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Движком
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Движком
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span
-                        class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
-                      >
-                      </span>
-                      <div class="shops__results-card-address">
-                        Все точки продаж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#" class="shops__results-card-title-more-link">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span
+                          class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
+                        >
+                        </span>
+                        <div class="shops__results-card-address">
+                          Все точки продаж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#"
+                            class="shops__results-card-additional-info"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="carville-logos/carville-card-logo.svg"
+                          alt=""
+                          class="shops__results-card-icon"
                         />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="carville-logos/carville-card-logo.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Carvilleshop
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Carvilleshop
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span class="shops__results-card-number-of-shops">
-                        5
-                      </span>
-                      <div class="shops__results-card-address">
-                        Шушары, Московское ш. 177 к 2, лит. Ж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#" class="shops__results-card-title-more-link">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span class="shops__results-card-number-of-shops">
+                          5
+                        </span>
+                        <div class="shops__results-card-address">
+                          Шушары, Московское ш. 177 к 2, лит. Ж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#"
+                            class="shops__results-card-additional-info"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="brands/avtozapchasti_dvizhcom.svg"
+                          alt=""
+                          class="shops__results-card-icon"
                         />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="brands/avtozapchasti_dvizhcom.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Движком
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Движком
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span
-                        class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
-                      >
-                      </span>
-                      <div class="shops__results-card-address">
-                        Все точки продаж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#" class="shops__results-card-title-more-link">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span
+                          class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
+                        >
+                        </span>
+                        <div class="shops__results-card-address">
+                          Все точки продаж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#"
+                            class="shops__results-card-additional-info"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="carville-logos/carville-card-logo.svg"
+                          alt=""
+                          class="shops__results-card-icon"
                         />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="carville-logos/carville-card-logo.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Carvilleshop
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Carvilleshop
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span class="shops__results-card-number-of-shops">
-                        5
-                      </span>
-                      <div class="shops__results-card-address">
-                        Шушары, Московское ш. 177 к 2, лит. Ж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#" class="shops__results-card-title-more-link">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span class="shops__results-card-number-of-shops">
+                          5
+                        </span>
+                        <div class="shops__results-card-address">
+                          Шушары, Московское ш. 177 к 2, лит. Ж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#"
+                            class="shops__results-card-additional-info"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
+                    <div class="shops__results-card">
+                      <span class="shops__results-card-orange-dot"> </span>
+                      <span class="shops__results-card-icon-container">
+                        <img
+                          src="brands/avtozapchasti_dvizhcom.svg"
+                          alt=""
+                          class="shops__results-card-icon"
                         />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="shops__results-card">
-                    <span class="shops__results-card-orange-dot"> </span>
-                    <span class="shops__results-card-icon-container">
-                      <img
-                        src="brands/avtozapchasti_dvizhcom.svg"
-                        alt=""
-                        class="shops__results-card-icon"
-                      />
-                    </span>
-                    <span class="shops__results-card-title">
-                      <span class="shops__results-card-title-text">
-                        Движком
                       </span>
+                      <span class="shops__results-card-title">
+                        <span class="shops__results-card-title-text">
+                          Движком
+                        </span>
 
-                      <a href="#" class="shops__results-card-title-more-link">
-                        Подробнее
-                      </a>
-                    </span>
-                    <div class="shops__results-card-offices">
-                      <span
-                        class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
-                      >
-                      </span>
-                      <div class="shops__results-card-address">
-                        Все точки продаж<br />
-                        Пн-Птн: 9:00 - 17:00<br />
-                        8 800 700-25-85<br />
-                        <a href="#">mail@carvilleshop.ru</a>
-                        <a href="#" class="shops__results-card-additional-info">
-                          Дополнительная информация
+                        <a href="#" class="shops__results-card-title-more-link">
+                          Подробнее
                         </a>
+                      </span>
+                      <div class="shops__results-card-offices">
+                        <span
+                          class="shops__results-card-number-of-shops shops__results-card-number-of-shops--all"
+                        >
+                        </span>
+                        <div class="shops__results-card-address">
+                          Все точки продаж<br />
+                          Пн-Птн: 9:00 - 17:00<br />
+                          8 800 700-25-85<br />
+                          <a href="#">mail@carvilleshop.ru</a>
+                          <a
+                            href="#"
+                            class="shops__results-card-additional-info"
+                          >
+                            Дополнительная информация
+                          </a>
+                        </div>
+                      </div>
+                      <a href="#" class="shops__results-card-website">
+                        carvilleshop.ru
+                      </a>
+                      <div class="shops__results-card-available-brands">
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/luzar.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/airline.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/trialli.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                            checked="checked"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img
+                              src="brands/startvolt.png"
+                              alt=""
+                              class="dark"
+                            />
+                            <img src="brands/startvolt-white.png" alt="" />
+                          </span>
+                        </label>
+                        <label
+                          class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
+                        >
+                          <input
+                            type="checkbox"
+                            class="shops__toggles-brand-checkbox-input"
+                            disabled="disabled"
+                          />
+                          <span class="shops__toggles-brand-checkbox-content">
+                            <img src="brands/cr.svg" alt="" class="dark" />
+                            <img src="brands/cr-white.svg" alt="" />
+                          </span>
+                        </label>
                       </div>
                     </div>
-                    <a href="#" class="shops__results-card-website">
-                      carvilleshop.ru
-                    </a>
-                    <div class="shops__results-card-available-brands">
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--luzar"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/luzar.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--airline"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/airline.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--trialli"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/trialli.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--startvolt"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                          checked="checked"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/startvolt.png" alt="" class="dark" />
-                          <img src="brands/startvolt-white.png" alt="" />
-                        </span>
-                      </label>
-                      <label
-                        class="shops__toggles-brand-checkbox shops__toggles-brand-checkbox--cr"
-                      >
-                        <input
-                          type="checkbox"
-                          class="shops__toggles-brand-checkbox-input"
-                          disabled="disabled"
-                        />
-                        <span class="shops__toggles-brand-checkbox-content">
-                          <img src="brands/cr.svg" alt="" class="dark" />
-                          <img src="brands/cr-white.svg" alt="" />
-                        </span>
-                      </label>
-                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
             <div class="shops__results-remark">
-              <span class="shops__results-remark-bold">Магазины и автосервисы.</span> Мы собираем в нашем союзе настоящих
-              специалистов, увлеченных своей работой, ответственных и
-              внимательных к клиентам.
+              <span class="shops__results-remark-bold"
+                >Магазины и автосервисы.</span
+              >
+              Мы собираем в нашем союзе настоящих специалистов, увлеченных своей
+              работой, ответственных и внимательных к клиентам.
+            </div>
+          </div>
+          <div class="shops__modals">
+            <div class="shops__modal" id="shop-1">
+              <div class="shops__modal-inner">
+                <div class="container">
+                  <div class="shops__modal-top-row">
+                    <div class="shops__modal-categories">
+                      <div class="shops__modal-category">
+                        Интернет-магазин
+                      </div>
+                      <div class="shops__modal-category">
+                        Розничный-магазин
+                      </div>
+                      <div class="shops__modal-category active">
+                        Оптовик
+                      </div>
+                      <div class="shops__modal-category">
+                        Дистрибьютер
+                      </div>
+                    </div>
+                    <button class="shops__modal-close-btn">
+                      <span class="shops__modal-close-btn-content">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path d="M248 0C111.033 0 0 111.033 0 248s111.033 248 248 248 248-111.033 248-248C495.841 111.099 384.901.159 248 0zm0 480C119.87 480 16 376.13 16 248S119.87 16 248 16s232 103.87 232 232c-.141 128.072-103.928 231.859-232 232z"/><path d="M361.136 134.864a8 8 0 00-11.312 0L248 236.688 146.176 134.864a8 8 0 10-11.312 11.312L236.688 248 134.864 349.824a8 8 0 00-.196 11.312 8 8 0 0011.508 0L248 259.312l101.824 101.824a8 8 0 0011.312-.196 8 8 0 000-11.116L259.312 248l101.824-101.824a8 8 0 000-11.312z"/></svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="shops__modal-middle-row">
+                    <h4 class="shops__modal-company-name">
+                      CAR PLUS <span class="shops__modal-company-name-cat">/компания/</span>
+                    </h4>
+                    <a href="#" class="shops__modal-city-link">
+                      <span class="text">Магнитогорск (31)</span> ˅
+                    </a>
+                  </div>
+                  <div class="shops__modal-bottom-row">
+                    <div class="shops__modal-company-logo-container">
+                      <img src="brands/carplus.jpg" alt="" class="shops__modal-company-logo">
+                    </div>
+                    <div class="shops__modal-info-wrapper">
+
+                   
+                    <div class="shops__modal-info">
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Название
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          CAR PLUS
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Адрес	  
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          Жукова, 5	    
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Телефон
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          <a href="tel:+79984015888">8 (998) 401-58-58	 </a>
+                          
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Сайт	     
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          <a href="https://carplus.ru	">carplus.ru	</a>
+                          
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Бренд           
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          Luzar, Trialli, Airline, CR, Startvolt
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Розн/Инт      
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          Розн/Инт    
+                        </div>
+                      </div>
+                      <div class="shops__modal-info-item">
+                        <div class="shops__modal-info-item-key">
+                          Розн/Опт     
+                        </div>
+                        <div class="shops__modal-info-item-value">
+                          Опт 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="shops__bottom-links">

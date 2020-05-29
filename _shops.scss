@@ -1314,3 +1314,291 @@
 .ps__rail-y {
   background: transparent !important;
 }
+
+
+
+
+.shops__modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(black, .2);
+  display: flex;
+  flex-direction: column;
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visbility 0s linear .3s;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+  }
+}
+
+
+.shops__modal-inner {
+  background-color: #fff;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.7);
+  padding: 40px 0;
+  padding-top: 32px;
+  margin: auto 0;
+  overflow-x: auto;
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  @include breakpoint(mobile) {
+    box-shadow: none;
+    padding: 20px 0;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
+  
+  }
+}
+
+
+.shops__modal-categories {
+  display: flex;
+  align-items: center;
+  box-shadow: border-box;
+  @include breakpoint(mobile) {
+    flex-wrap: wrap;
+  }
+}
+
+
+.shops__modal-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+  }
+}
+
+.shops__modal-category {
+  border: none !important;
+  padding-right: 40px;
+  min-height: 40px;
+  border-right: 1px solid #e4e4e4 !important;
+  color: #ababab;
+  transition: all .2s;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: border-box;
+  &:last-child {
+    border-right: none !important;
+  }
+  &:link,
+  &:visited {
+    color: #ababab;
+  }
+
+  &.active {
+    text-decoration: underline;
+    color: $primary-color !important;
+  }
+
+  @include breakpoint(mobile) {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    &:nth-child(even) {
+      padding-left: 1rem;
+    }
+  }
+}
+
+
+.shops__modal-close-btn {
+  width: 32px;
+  height: 32px;
+  border: none !important;
+  background: transparent !important;
+  border-radius: 50%;
+  padding: 0;
+
+  &:hover,
+  &:active {
+    svg {
+      fill: $primary-color;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    // position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 50;
+    order: -1;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+.shops__modal-close-btn-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: #a5a5a5;
+    transition: fill .2s;
+  }
+}
+
+
+.shops__modal-middle-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 20px;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+  }
+}
+
+
+.shops__modal-company-name {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  margin-right: 20px;
+  @include breakpoint(mobile) {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+}
+
+
+.shops__modal-company-name-cat {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shops__modal-city-link {
+  border: none !important;
+  color: #706f6f;
+  font-size: 16px;
+  line-height: 1.2;
+ 
+  transition: color .2s;
+  font-weight: 700;
+  .text {
+    text-decoration: underline;
+  
+  }
+  &:link,
+  &:visited {
+    color: #706f6f;
+  }
+
+  &:hover,
+  &:active {
+    color: $primary-color !important;
+  }
+}
+
+
+
+.shops__modal-bottom-row {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: initial;
+    margin-top: 15px;
+  }
+}
+
+
+.shops__modal-company-logo-container {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  margin-right: 40px;
+  position: relative;
+}
+
+.shops__modal-company-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.shops__modal-info-wrapper {
+  @include breakpoint(mobile) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.shops__modal-info {
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint(mobile) {
+    margin-top: 20px;
+    margin: -10px;
+  }
+}
+
+.shops__modal-info-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  @include breakpoint(mobile) {
+    margin: 0;
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+
+.shops__modal-info-item-key {
+  color: #ababab;
+  font-size: 16px;
+  margin-bottom: 30px;
+  @include breakpoint(mobile) {
+    margin-bottom: 10px;
+  }
+}
+
+
+.shops__modal-info-item-value {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  a {
+    transition: color .2s;
+    border: none !important;
+    text-decoration: underline;
+    &:link,
+    &:visited {
+      color: inherit !important;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color !important;
+    }
+  }
+}

@@ -29,6 +29,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  document.addEventListener("click", function (event) {
+    if (
+      event.target.closest(".js-shop-details-open") ||
+      event.target.matches(".js-shop-details-open")
+    ) {
+      event.preventDefault();
+      var link = event.target.closest(".js-shop-details-open");
+
+      var hash = link.hash;
+      if (!hash) return;
+      var modal = document.querySelector(hash);
+
+      if (modal) {
+        modal.classList.add("open");
+      }
+    } else if (
+      event.target.closest(".shops__modal-close-btn") ||
+      event.target.matches(".shops__modal-close-btn")
+    ) {
+      var modalToClose = event.target.closest(".shops__modal");
+
+      if (modalToClose) {
+        modalToClose.classList.remove("open");
+      }
+    }
+  });
+
   ymaps.ready(init);
 
   function init() {
@@ -45,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       var myPlacemark = new ymaps.Placemark(
-        coords,
+        [59.933844, 30.317506],
         {},
         {
           preset: "islands#redCircleDotIcon",
@@ -56,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       myMap.behaviors.disable("scrollZoom");
 
-      //   if (detectIt.hasTouch) {
-      //     myMap.behaviors.disable("drag");
-      //   }
+      if (window.matchMedia("(max-width: 767px)").matches) {
+        myMap.behaviors.disable("drag");
+      }
     });
   }
 });

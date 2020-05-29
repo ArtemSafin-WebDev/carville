@@ -1677,4 +1677,381 @@ img {
 .ps__rail-y {
   background: transparent !important;
 }
+
+.shops__modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s, visbility 0s linear .3s;
+  transition: opacity .3s, visbility 0s linear .3s;
+}
+
+.shops__modal.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.shops__modal-inner {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.7);
+  padding: 40px 0;
+  padding-top: 32px;
+  margin: auto 0;
+  overflow-x: auto;
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-inner {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.shops__modal-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-categories {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.shops__modal-top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-top-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+
+.shops__modal-category {
+  border: none !important;
+  padding-right: 40px;
+  min-height: 40px;
+  border-right: 1px solid #e4e4e4 !important;
+  color: #ababab;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+}
+
+.shops__modal-category:last-child {
+  border-right: none !important;
+}
+
+.shops__modal-category:link, .shops__modal-category:visited {
+  color: #ababab;
+}
+
+.shops__modal-category.active {
+  text-decoration: underline;
+  color: #ff6e00 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-category {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .shops__modal-category:nth-child(even) {
+    padding-left: 1rem;
+  }
+}
+
+.shops__modal-close-btn {
+  width: 32px;
+  height: 32px;
+  border: none !important;
+  background: transparent !important;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.shops__modal-close-btn:hover svg, .shops__modal-close-btn:active svg {
+  fill: #ff6e00;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-close-btn {
+    width: 40px;
+    height: 40px;
+    z-index: 50;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.shops__modal-close-btn-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shops__modal-close-btn-content svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #a5a5a5;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.shops__modal-middle-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-middle-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+
+.shops__modal-company-name {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-company-name {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+}
+
+.shops__modal-company-name-cat {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shops__modal-city-link {
+  border: none !important;
+  color: #706f6f;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  font-weight: 700;
+}
+
+.shops__modal-city-link .text {
+  text-decoration: underline;
+}
+
+.shops__modal-city-link:link, .shops__modal-city-link:visited {
+  color: #706f6f;
+}
+
+.shops__modal-city-link:hover, .shops__modal-city-link:active {
+  color: #ff6e00 !important;
+}
+
+.shops__modal-bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-bottom-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    margin-top: 15px;
+  }
+}
+
+.shops__modal-company-logo-container {
+  width: 70px;
+  height: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 40px;
+  position: relative;
+}
+
+.shops__modal-company-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-info-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.shops__modal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-info {
+    margin-top: 20px;
+    margin: -10px;
+  }
+}
+
+.shops__modal-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-info-item {
+    margin: 0;
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+.shops__modal-info-item-key {
+  color: #ababab;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shops__modal-info-item-key {
+    margin-bottom: 10px;
+  }
+}
+
+.shops__modal-info-item-value {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.shops__modal-info-item-value a {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  border: none !important;
+  text-decoration: underline;
+}
+
+.shops__modal-info-item-value a:link, .shops__modal-info-item-value a:visited {
+  color: inherit !important;
+}
+
+.shops__modal-info-item-value a:hover, .shops__modal-info-item-value a:active {
+  color: #ff6e00 !important;
+}
 /*# sourceMappingURL=styles.css.map */
