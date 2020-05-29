@@ -14,17 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  var shopsScrollContainers = Array.prototype.slice.call(
-    document.querySelectorAll(".js-custom-scroll-container")
-  );
+  if (window.matchMedia("(min-width: 1025px)").matches) {
+    var shopsScrollContainers = Array.prototype.slice.call(
+      document.querySelectorAll(".js-custom-scroll-container")
+    );
 
-  shopsScrollContainers.forEach(function (container) {
-    new PerfectScrollbar(container, {
-      wheelSpeed: 2,
-      wheelPropagation: true,
-      minScrollbarLength: 20,
+    shopsScrollContainers.forEach(function (container) {
+      new PerfectScrollbar(container, {
+        wheelSpeed: 2,
+        wheelPropagation: true,
+        minScrollbarLength: 20,
+        suppressScrollX: true,
+      });
     });
-  });
+  }
 
   ymaps.ready(init);
 
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var myMap = new ymaps.Map(mapElement, {
         center: [59.933844, 30.317506],
-        zoom: 17,
+        zoom: 14,
         controls: [],
       });
 
@@ -53,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       myMap.behaviors.disable("scrollZoom");
 
-    //   if (detectIt.hasTouch) {
-    //     myMap.behaviors.disable("drag");
-    //   }
+      //   if (detectIt.hasTouch) {
+      //     myMap.behaviors.disable("drag");
+      //   }
     });
   }
 });
